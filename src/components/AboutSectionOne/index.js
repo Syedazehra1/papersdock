@@ -25,41 +25,40 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Professional Tutoring for O-level and A-level Students."
-                paragraph="Our primary focus is on empowering students to excel in their O-level and A-level examinations through interactive lessons, personalized study plans, and engaging discussions."
+                title="Smart Pay: Your Gateway to Secure Digital Payments."
+                paragraph="Smart Pay is a leading provider of comprehensive digital payment solutions in Pakistan, connecting businesses with a vast network of mobile financial service providers and wallet operators across the country. With integration into major platforms like Jazz Cash and Easy Paisa, and ongoing partnerships with HBL Konnect, Alfax, Finja, and billing aggregators such as 1-Link and 1 Bill, Smart Pay offers a unified API solution for seamless processing of payments via Credit and Debit Cards (MasterCard/Visa)."
                 mb="44px"
               />
 
-              <div
-                className="mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Experienced Tutors" />
-                    <List text="Tailored Study Plans" />
-                    <List text="Interactive Learning" />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Comprehensive Resources" />
-                    <List text="Flexible Scheduling" />
-              
-                  </div>
+              <div className="mb-12 max-w-[570px] lg:mb-0" data-wow-delay=".15s">
+              <div className="mx-[-12px] flex flex-wrap">
+                <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
+                  <List text="Integration with Mobile Financial Services Providers" />
+                  <List text="Wallet Operators Integration (Jazz Cash & Easy Paisa)" />
+                  <List text="Single API Solution for Credit / Debit Card Payments (MasterCard/Visa)" />
+                  <List text="International Security Standards Compliance" />
+                  <List text="Digital Ecosystem Development" />
+                </div>
+                <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
+                  <List text="Integration with HBL Konnect, Alfax, Finja" />
+                  <List text="Billing Aggregators Integration (1-Link, 1 Bill)" />
+                  <List text="PCI DSS Certification for Digital Security" />
                 </div>
               </div>
+            </div>
+            
             </div>
 
             <div className="w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0">
               <Image
-            src="/images/about/aboutimg.jpg"
+            src="/images/about/aboutimg.jpeg"
             alt="about image"
             fill
             className="drop-shadow-three dark:hidden dark:drop-shadow-none"
           />
           <Image
-            src="/images/about/aboutimg.jpg"
+            src="/images/about/aboutimg.jpeg"
             alt="about image"
             fill
             className="hidden drop-shadow-three dark:block dark:drop-shadow-none"

@@ -8,7 +8,7 @@ const About = () => {
        
         <Breadcrumb
         pageName="About Page"
-        description="Empowering students with comprehensive O and A level resources for academic excellence."
+        description=" A leading Payment Aggregator Company In Pakistan, operating since 2008"
       />
       <AboutSectionOne />
       <AboutSectionTwo />

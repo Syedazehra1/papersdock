@@ -6,6 +6,7 @@ import Features from '../sections/Features'
 import Video from '../sections/Video'
 import Testimonials from '@/pages/sections/Testimonial'
 import ContactPage from '../contact'
+import Contact from '@/components/Contact'
 
 
 const HomeScreen = () => {
@@ -16,7 +17,7 @@ const HomeScreen = () => {
       <Features/>
   <Video/>
   <Testimonials/>
-  <ContactPage/>
+<Contact/>
     </div>
   )
 }

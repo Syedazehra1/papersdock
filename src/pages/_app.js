@@ -14,7 +14,11 @@ export default function App({ Component, pageProps }) {
    
   <>
 
+<<<<<<< HEAD
       {token ? "" : <Header />}
+=======
+      {token ? <HeaderAdmin /> : <Header />}
+>>>>>>> f31c6eeb94704d74a3f3acbeee8c5dce5cc5f28d
       <Component {...pageProps} />
       {token ? <FooterAdmin /> : <Footer />}
     </>

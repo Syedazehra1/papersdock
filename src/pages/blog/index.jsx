@@ -11,7 +11,7 @@ const Blog = () => {
       <div className="container">
       <Breadcrumb
       pageName="Blog"
-      description="Empowering students with comprehensive O and A level resources for academic excellence."
+      description="A leading Payment Aggregator Company In Pakistan, operating since 2008."
     />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">

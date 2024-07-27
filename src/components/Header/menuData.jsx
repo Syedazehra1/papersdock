@@ -20,8 +20,8 @@ const menuData= [
   },
   {
     id: 4,
-    title: "Docs",
-    path: "/docs",
+    title: "Contact",
+    path: "/contact",
     newTab: false,
   },
 

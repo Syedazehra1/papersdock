@@ -16,19 +16,19 @@ const Footer = () => {
                     src={logo}
                     alt="logo"
                     className="w-full dark:hidden"
-                    width={200}
+                    width={300}
                     height={100}
                   />
                   <Image
                     src={logo}
                     alt="logo"
                     className="hidden w-full dark:block"
-                    width={200}
+                    width={300}
                     height={130}
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                Empowering students with comprehensive O and A level resources for academic excellence.
+                A leading Payment Aggregator Company In Pakistan, operating since 2008
                 </p>
                 <div className="flex items-center">
                   <a
