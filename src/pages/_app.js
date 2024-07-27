@@ -1,17 +1,22 @@
 import { Footer, FooterAdmin, Header, HeaderAdmin } from "@/components";
 import "@/styles/globals.css";
-
+import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }) {
-  const isAdminPage = Component.name === "AdminPage"; // Replace "AdminPage" with the actual name of your admin page component
-
+  let path = ""
+  useEffect(() => {
+    
+    const path = localStorage.getItem("token");
+    setToken(path);
+  }, [])
+  const [token, setToken] = useState(path ?? "");
   return (
    
   <>
 
-      {isAdminPage ? <HeaderAdmin /> : <Header />}
+      {token ? "" : <Header />}
       <Component {...pageProps} />
-      {isAdminPage ? <FooterAdmin /> : <Footer />}
+      {token ? <FooterAdmin /> : <Footer />}
     </>
       
   );

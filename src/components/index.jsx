@@ -6,4 +6,6 @@ import ShoeCard from "./ShoeCard";
 import Button from "./Button";
 import AboutSectionOne from "./AboutSectionOne";
 import AboutSectionTwo from "./AboutSectionTwo";
-export { Header, Footer, HeaderAdmin, FooterAdmin, Button, ShoeCard, AboutSectionOne, AboutSectionTwo };
+import Sidebar from "./Sidebar";
+import TopHeader from "./TopHeader";
+export { Header, Footer, HeaderAdmin, FooterAdmin, Button, ShoeCard, AboutSectionOne, AboutSectionTwo,Sidebar,TopHeader };

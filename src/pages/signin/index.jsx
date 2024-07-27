@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Breadcrumb } from "@/Common";
 import { logo } from "@/assets/images";
+import { useRouter } from "next/router";
 
 
 
@@ -12,6 +13,12 @@ export const metadata= {
 };
 
 const SignIn= () => {
+const router =useRouter()
+ const handleClick = () => {
+   localStorage.setItem("token", "true");
+   router.push("/dashboard");
+
+ }
   return (
     <>
     <section className="px-10" style={{height:`500px`,display:'flex',alignItems:'center',justifyContent:'center'}}>
@@ -124,16 +131,17 @@ const SignIn= () => {
                     </span>
                   </div>
                 </div>
-                <Link href="../Dashboard" className="text-primary">
+        
            
-                <div className="mb-5">
+                <div className="mb-5" onClick={handleClick}>
+
                   <input
                     type="submit"
                     value="Sign In"
                     className="w-full cursor-pointer rounded-lg border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
                   />
                 </div>
-                </Link>
+          
              
 
                 <div className="mt-6 text-center">
