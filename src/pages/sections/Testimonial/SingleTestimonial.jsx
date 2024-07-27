@@ -7,30 +7,25 @@ const starIcon = (
 );
 
 const SingleTestimonial = ({ testimonial }) => {
-  const { star, name, image, content, designation } = testimonial;
 
-  const ratingIcons = Array.from({ length: star }, (_, index) => (
-    <span key={index} className="text-yellow">
-      {starIcon}
-    </span>
-  ));
 
   return (
     <div className="w-full " style={{ backgroundColor:'#1D2430' ,padding:50 }}>
       <div className="rounded-sm shadow-three hover:shadow-gray-dark lg:px-5 xl:px-8">
-        <div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
-        <p className="mb-8 border-b border-body-color border-opacity-10 pb-8 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-white">
-          {`“${content}`}
+   
+        <p className="mb-8 border-b border-body-color border-opacity-10 pb-8 text-white text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-white">
+          {`“${testimonial?.content}`}
         </p>
         <div className="flex items-center">
           <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
-            <Image src=  {`${image}`} alt={name}  width={50} height={50}/>
+            <Image src=  {`${testimonial?.image}`} alt={testimonial?.name}  width={50} height={50}/>
           </div>
           <div className="w-full">
-            <h3 className="mb-1 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
-              {name}
+            <h3 className="mb-1 text-lg font-semibold text-white dark:text-white lg:text-base xl:text-lg">
+              {testimonial?.name}
             </h3>
-            <p className="text-sm text-body-color">{designation}</p>
+            <p className="text-sm text-body-color text-white">{testimonial?.designation}</p>
+            
           </div>
         </div>
       </div>
